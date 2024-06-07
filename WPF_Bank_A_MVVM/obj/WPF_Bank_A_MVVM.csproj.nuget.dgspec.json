@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM.csproj": {}
+    "D:\\GitHub\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM.csproj": {
+    "D:\\GitHub\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM.csproj",
+        "projectUniqueName": "D:\\GitHub\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM.csproj",
         "projectName": "WPF_Bank_A_MVVM",
-        "projectPath": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM.csproj",
+        "projectPath": "D:\\GitHub\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM.csproj",
         "packagesPath": "C:\\Users\\Martin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM\\obj\\",
+        "outputPath": "D:\\GitHub\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Martin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,12 +45,6 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "dependencies": {
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

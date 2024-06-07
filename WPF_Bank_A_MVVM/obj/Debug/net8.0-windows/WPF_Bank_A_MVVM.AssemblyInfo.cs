@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF_Bank_A_MVVM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cf6edbe83db99c485a30e89e36dfafb13f05052")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF_Bank_A_MVVM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF_Bank_A_MVVM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

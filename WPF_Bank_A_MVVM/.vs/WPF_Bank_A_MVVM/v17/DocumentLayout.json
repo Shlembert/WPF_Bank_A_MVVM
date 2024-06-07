@@ -1,10 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM\\",
+  "WorkspaceRootPath": "D:\\GitHub\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{721F3D97-D6CD-4ED2-A64F-DFFC158B8BEF}|WPF_Bank_A_MVVM.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a_mvvm\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{721F3D97-D6CD-4ED2-A64F-DFFC158B8BEF}|WPF_Bank_A_MVVM.csproj|d:\\github\\wpf_bank_a_mvvm\\wpf_bank_a_mvvm\\wpf_bank_a_mvvm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{721F3D97-D6CD-4ED2-A64F-DFFC158B8BEF}|WPF_Bank_A_MVVM.csproj|solutionrelative:wpf_bank_a_mvvm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D4600B-716A-4A38-825B-899ADC2476E2}|C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\WPF_Bank_A_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a_mvvm_library\\models\\depositaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D4600B-716A-4A38-825B-899ADC2476E2}|C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\WPF_Bank_A_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a_mvvm_library\\converters\\accounttypeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D4600B-716A-4A38-825B-899ADC2476E2}|C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\WPF_Bank_A_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a_mvvm_library\\wpf_bank_a_mvvm_library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D4600B-716A-4A38-825B-899ADC2476E2}|C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\WPF_Bank_A_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a_mvvm_library\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721F3D97-D6CD-4ED2-A64F-DFFC158B8BEF}|WPF_Bank_A_MVVM.csproj|d:\\github\\wpf_bank_a_mvvm\\wpf_bank_a_mvvm\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{721F3D97-D6CD-4ED2-A64F-DFFC158B8BEF}|WPF_Bank_A_MVVM.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D4600B-716A-4A38-825B-899ADC2476E2}|C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\WPF_Bank_A_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a_mvvm_library\\models\\operationlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D4600B-716A-4A38-825B-899ADC2476E2}|C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\WPF_Bank_A_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\wpf_bank_a_mvvm_library\\services\\itransferoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,10 +41,89 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "WPF_Bank_A_MVVM",
+              "DocumentMoniker": "D:\\GitHub\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM.csproj",
+              "RelativeDocumentMoniker": "WPF_Bank_A_MVVM.csproj",
+              "ToolTip": "D:\\GitHub\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM.csproj",
+              "RelativeToolTip": "WPF_Bank_A_MVVM.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-07T09:52:52.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DepositAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\Models\\DepositAccount.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\Models\\DepositAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T09:31:42.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountTypeConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\Converters\\AccountTypeConverter.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\Converters\\AccountTypeConverter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T09:22:58.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WPF_Bank_A_MVVM_Library",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\WPF_Bank_A_MVVM_Library.csproj",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\WPF_Bank_A_MVVM_Library.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-07T09:22:00.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OperationLog.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\Models\\OperationLog.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\Models\\OperationLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T09:19:46.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ITransferOperations.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\Services\\ITransferOperations.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\Services\\ITransferOperations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T09:16:56.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\Models\\Account.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM_Library\\Models\\Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T09:13:24.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\GitHub\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Martin\\source\\repos\\WPF_Bank_A_MVVM\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\GitHub\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

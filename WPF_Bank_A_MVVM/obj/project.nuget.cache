@@ -1,8 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "SiQFhmxd5Qb2Oh0APfGb2tws16jz/vXZ0b5E1lruB6RvLxwy9I/0HaTY4s/4bO0y5Vg6YeRXmEpozIyKcnleXw==",
+  "dgSpecHash": "3b/QzCWh41XfCZhteWTfcOE4uj7MzIB+UWzd20o7ewbTyZRXQYHwYvbgIJUDCrmn9VJhtmthMeSxSdb3E0fTeQ==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM\\WPF_Bank_A_MVVM.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\Martin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\presentationframework\\4.6.0\\presentationframework.4.6.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"PresentationFramework 4.6.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "PresentationFramework",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }

@@ -1,0 +1,7 @@
+D:\GitHub\WPF_Bank_A_MVVM\WPF_Bank_A_MVVM\obj\Debug\net8.0-windows\View\MainWindow.g.cs
+D:\GitHub\WPF_Bank_A_MVVM\WPF_Bank_A_MVVM\obj\Debug\net8.0-windows\View\NewClientWindow.g.cs
+D:\GitHub\WPF_Bank_A_MVVM\WPF_Bank_A_MVVM\obj\Debug\net8.0-windows\View\OperationLogWindow.g.cs
+D:\GitHub\WPF_Bank_A_MVVM\WPF_Bank_A_MVVM\obj\Debug\net8.0-windows\App.g.cs
+D:\GitHub\WPF_Bank_A_MVVM\WPF_Bank_A_MVVM\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\GitHub\WPF_Bank_A_MVVM\WPF_Bank_A_MVVM\obj\Debug\net8.0-windows\WPF_Bank_A_MVVM_MarkupCompile.cache
+D:\GitHub\WPF_Bank_A_MVVM\WPF_Bank_A_MVVM\obj\Debug\net8.0-windows\WPF_Bank_A_MVVM_MarkupCompile.lref

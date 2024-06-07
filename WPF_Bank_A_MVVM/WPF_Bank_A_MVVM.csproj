@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="View\" />
+    <ProjectReference Include="C:\Users\Martin\source\repos\WPF_Bank_A_MVVM_Library\WPF_Bank_A_MVVM_Library.csproj" />
   </ItemGroup>
 
 </Project>

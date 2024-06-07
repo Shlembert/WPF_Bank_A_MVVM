@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.10.34707.107
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_Bank_A_MVVM", "WPF_Bank_A_MVVM.csproj", "{721F3D97-D6CD-4ED2-A64F-DFFC158B8BEF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59D4600B-716A-4A38-825B-899ADC2476E2} = {59D4600B-716A-4A38-825B-899ADC2476E2}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_Bank_A_MVVM_Library", "C:\Users\Martin\source\repos\WPF_Bank_A_MVVM_Library\WPF_Bank_A_MVVM_Library.csproj", "{59D4600B-716A-4A38-825B-899ADC2476E2}"
 EndProject

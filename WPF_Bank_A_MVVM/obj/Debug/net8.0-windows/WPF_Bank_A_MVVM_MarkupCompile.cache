@@ -1,5 +1,5 @@
 ﻿WPF_Bank_A_MVVM
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\GitHub\WPF_Bank_A_MVVM\WPF_Bank_A_MVVM\App.xaml
 3896658501
 
-111515227304
-2001726881439
+91232259576
+1981451641563
 View\MainWindow.xaml;View\NewClientWindow.xaml;View\OperationLogWindow.xaml;
 
-False
+True
 

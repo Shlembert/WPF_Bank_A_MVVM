@@ -1,0 +1,492 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_ui\\views\\transferwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:views\\transferwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\models\\depositaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_ui\\views\\operationlogwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:views\\operationlogwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_ui\\views\\operationlogwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:views\\operationlogwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_ui\\views\\newaccountwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:views\\newaccountwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\models\\accountoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_ui\\views\\newaccountwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:views\\newaccountwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\models\\iaccountoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\models\\iaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\models\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_ui\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_ui\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\models\\operationlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_ui\\views\\newclientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:views\\newclientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_ui\\views\\newclientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:views\\newclientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_ui\\views\\transferwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:views\\transferwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\models\\modelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\converters\\accounttypeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_ui\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_ui\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\services\\itransferoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\services\\iclientdatahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\services\\iaccountoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\services\\clientdatahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A02DF4-02DF-4CEC-A58A-E6235FEEDF3B}|..\\BankA_MVVM_Library\\BankA_MVVM_Library.csproj|c:\\users\\martin\\source\\repos\\banka_mvvm_library\\models\\nondepositaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{83467BEF-A93C-41D6-B402-C776DA6220A4}|BankA_MVVM_UI.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransferWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\TransferWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\TransferWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\TransferWindow.xaml.cs",
+              "RelativeToolTip": "Views\\TransferWindow.xaml.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAYwGYAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T09:11:24.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NewAccountWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\NewAccountWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\NewAccountWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\NewAccountWindow.xaml.cs",
+              "RelativeToolTip": "Views\\NewAccountWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T09:04:44.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OperationLogWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\OperationLogWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\OperationLogWindow.xaml",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\OperationLogWindow.xaml",
+              "RelativeToolTip": "Views\\OperationLogWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-11T07:06:32.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OperationLogWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\OperationLogWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\OperationLogWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\OperationLogWindow.xaml.cs",
+              "RelativeToolTip": "Views\\OperationLogWindow.xaml.cs",
+              "ViewState": "AQIAADcAAABgZmZmZmYkwEoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T08:32:57.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DepositAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\DepositAccount.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Models\\DepositAccount.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\DepositAccount.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Models\\DepositAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:45:42.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountOperations.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\AccountOperations.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Models\\AccountOperations.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\AccountOperations.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Models\\AccountOperations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:40:19.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAccountOperations.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\IAccountOperations.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Models\\IAccountOperations.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\IAccountOperations.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Models\\IAccountOperations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T07:10:54.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\IAccount.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Models\\IAccount.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\IAccount.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Models\\IAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:49:06.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BankAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\BankAccount.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Models\\BankAccount.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\BankAccount.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Models\\BankAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:42:24.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Models\\Account.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\Account.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Models\\Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:39:15.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NewAccountWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\NewAccountWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\NewAccountWindow.xaml",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\NewAccountWindow.xaml",
+              "RelativeToolTip": "Views\\NewAccountWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-11T07:15:25.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAACkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T07:02:11.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Views\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T05:06:17.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-11T05:06:18.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OperationLog.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\OperationLog.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Models\\OperationLog.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\OperationLog.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Models\\OperationLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:51:51.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NewClientWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\NewClientWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\NewClientWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\NewClientWindow.xaml.cs",
+              "RelativeToolTip": "Views\\NewClientWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T08:30:03.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\Client.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Models\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:43:52.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NewClientWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\NewClientWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\NewClientWindow.xaml",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\NewClientWindow.xaml",
+              "RelativeToolTip": "Views\\NewClientWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-11T07:05:48.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TransferWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\TransferWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\TransferWindow.xaml",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\Views\\TransferWindow.xaml",
+              "RelativeToolTip": "Views\\TransferWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-11T08:22:34.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AccountTypeConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Converters\\AccountTypeConverter.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Converters\\AccountTypeConverter.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Converters\\AccountTypeConverter.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Converters\\AccountTypeConverter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:34:10.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\ModelBase.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Models\\ModelBase.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\ModelBase.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Models\\ModelBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:37:43.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\ViewModels\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\ViewModels\\RelayCommand.cs",
+              "RelativeToolTip": "ViewModels\\RelayCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T07:00:09.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "ViewModels\\ViewModelBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:59:13.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ITransferOperations.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Services\\ITransferOperations.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Services\\ITransferOperations.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Services\\ITransferOperations.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Services\\ITransferOperations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:57:18.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IClientDataHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Services\\IClientDataHandler.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Services\\IClientDataHandler.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Services\\IClientDataHandler.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Services\\IClientDataHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:56:06.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IAccountOperations.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Services\\IAccountOperations.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Services\\IAccountOperations.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Services\\IAccountOperations.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Services\\IAccountOperations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:54:49.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ClientDataHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Services\\ClientDataHandler.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Services\\ClientDataHandler.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Services\\ClientDataHandler.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Services\\ClientDataHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:53:22.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "NonDepositAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\NonDepositAccount.cs",
+              "RelativeDocumentMoniker": "..\\BankA_MVVM_Library\\Models\\NonDepositAccount.cs",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_Library\\Models\\NonDepositAccount.cs",
+              "RelativeToolTip": "..\\BankA_MVVM_Library\\Models\\NonDepositAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T06:50:21.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\Martin\\source\\repos\\BankA_MVVM_UI\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-11T05:15:45.582Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

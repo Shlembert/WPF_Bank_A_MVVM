@@ -3,10 +3,24 @@
     public class NonDepositAccount : Account
     {
         public NonDepositAccount(int accountNumber, decimal initialBalance)
-            : base(accountNumber, initialBalance)
+            : base(accountNumber, "Non-Deposit", initialBalance) // Указываем тип счета для недепозитного счета
         {
         }
 
-        // Добавим здесь специфические методы для недепозитного счета
+        public override void Deposit(decimal amount)
+        {
+            // Для недепозитного счета может быть другая логика для внесения средств
+            Balance += amount;
+        }
+
+        public override bool Withdraw(decimal amount)
+        {
+            if (amount > Balance)
+            {
+                return false; // Недостаточно средств
+            }
+            Balance -= amount;
+            return true;
+        }
     }
 }

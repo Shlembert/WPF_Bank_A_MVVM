@@ -40,10 +40,10 @@ namespace BankA_MVVM_UI.Views
             string accountNumber = AccountNumberTextBox.Text.Replace(" ", "");
             decimal initialBalance = 0;
 
-            Account newAccount;
+            Account newAccount = null;
             if (DepositRadioButton.IsChecked == true)
             {
-                newAccount = new DepositAccount(int.Parse(accountNumber), initialBalance);
+               // newAccount = new DepositAccount(int.Parse(accountNumber), initialBalance);
             }
             else if (NonDepositRadioButton.IsChecked == true)
             {
@@ -55,8 +55,8 @@ namespace BankA_MVVM_UI.Views
                 return;
             }
 
-            client.Accounts.Add(newAccount);
-            ClientDataHandler.SaveClients(MainWindow.Clients);
+           if(newAccount!=null)  client.Accounts.Add(newAccount);
+           // ClientDataHandler.SaveClients(MainWindow.Clients);
             AccountAdded?.Invoke(this, newAccount);
             OperationLogWindow.AddOperationLog(new OperationLog(DateTime.Now, "Создан новый счет", client.Name, accountNumber, initialBalance));
             this.Close();

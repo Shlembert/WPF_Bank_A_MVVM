@@ -10,8 +10,20 @@ namespace BankA_MVVM.ViewModels
     public class MainWindowViewModel : ViewModelBase
     {
         private readonly IClientDataHandler _clientDataHandler;
+        private Client _selectedClient;
 
-        public ObservableCollection<Client> Clients { get; }
+        public ObservableCollection<Client> Clients { get; private set; }
+
+        public Client SelectedClient
+        {
+            get => _selectedClient;
+            set
+            {
+                _selectedClient = value;
+                OnPropertyChanged();
+                OpenClientDetailsWindow(); // Открываем окно с данными клиента при выборе клиента
+            }
+        }
 
         public ICommand NewClientCommand { get; }
         public ICommand OpenLogCommand { get; }
@@ -19,7 +31,7 @@ namespace BankA_MVVM.ViewModels
         public MainWindowViewModel(IClientDataHandler clientDataHandler)
         {
             _clientDataHandler = clientDataHandler;
-            Clients = new ObservableCollection<Client>(_clientDataHandler.LoadClients());
+            LoadClients();
 
             NewClientCommand = new RelayCommand(OpenNewClientWindow);
             OpenLogCommand = new RelayCommand(OpenLogWindow);
@@ -28,13 +40,24 @@ namespace BankA_MVVM.ViewModels
         // Пустой конструктор для XAML-дизайнера
         public MainWindowViewModel() : this(new ClientDataHandler()) { }
 
+        private void LoadClients()
+        {
+            var clientsList = _clientDataHandler.LoadClients();
+            Clients = new ObservableCollection<Client>(clientsList);
+        }
+
+        private void SaveClients()
+        {
+            _clientDataHandler.SaveClients(Clients.ToList());
+        }
+
         private void OpenNewClientWindow()
         {
             var newClientWindow = new NewClientWindow();
             newClientWindow.ClientAdded += (sender, newClient) =>
             {
                 Clients.Add(newClient);
-                _clientDataHandler.SaveClients(Clients.ToList());
+                SaveClients();
             };
             newClientWindow.Show();
         }
@@ -43,6 +66,15 @@ namespace BankA_MVVM.ViewModels
         {
             var logWindow = new OperationLogWindow();
             logWindow.Show();
+        }
+
+        private void OpenClientDetailsWindow()
+        {
+            if (SelectedClient != null)
+            {
+                var clientDetailsWindow = new ClientDetailsWindow(SelectedClient);
+                clientDetailsWindow.Show();
+            }
         }
     }
 }

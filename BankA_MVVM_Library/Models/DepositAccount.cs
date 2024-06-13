@@ -1,26 +1,25 @@
-﻿using System;
-
-namespace BankA_MVVM_Library.Models
+﻿namespace BankA_MVVM_Library.Models
 {
-    public class DepositAccount : BankAccount
+    public class DepositAccount : Account
     {
-        public DepositAccount(int accountNumber, decimal balance) : base(accountNumber, balance)
+        public DepositAccount(int accountNumber, string accountType, decimal initialBalance)
+            : base(accountNumber, accountType, initialBalance)
         {
         }
 
-        public DateTime CreationDate { get; set; }
-
         public override void Deposit(decimal amount)
         {
-            if (amount <= 0)
-                throw new ArgumentException("Сумма должна быть больше нуля.", nameof(amount));
-
-            base.Deposit(amount);
+            Balance += amount;
         }
 
         public override bool Withdraw(decimal amount)
         {
-            throw new InvalidOperationException("Снятие средств недоступно для депозитного счета.");
+            if (amount > Balance)
+            {
+                return false; // Недостаточно средств
+            }
+            Balance -= amount;
+            return true;
         }
     }
 }

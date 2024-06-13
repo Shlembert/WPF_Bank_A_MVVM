@@ -2,15 +2,22 @@
 
 namespace BankA_MVVM_Library.Models
 {
-    public class Client : ModelBase
+    public class Client
     {
-        public Client(string clientName)
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public List<Account> Accounts { get; set; }
+
+        public Client()
         {
-            ClientName = clientName;
+            Accounts = new List<Account>();
         }
 
-        public string Name { get; set; }
-        public List<Account> Accounts { get; set; } = new List<Account>();
-        public string ClientName { get; }
+        public Client(int id, string name)
+        {
+            Id = id;
+            Name = name;
+            Accounts = new List<Account>();
+        }
     }
 }

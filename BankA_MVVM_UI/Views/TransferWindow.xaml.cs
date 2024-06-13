@@ -1,4 +1,5 @@
-﻿using BankA_MVVM_Library.Models;
+﻿using BankA_MVVM.ViewModels;
+using BankA_MVVM_Library.Models;
 using BankA_MVVM_Library.Services;
 using System;
 using System.Linq;
@@ -43,10 +44,10 @@ namespace BankA_MVVM_UI.Views
             ClientsComboBox.Items.Clear();
 
             // Добавление других клиентов в комбо-бокс
-            foreach (var otherClient in MainWindow.Clients.Where(c => c != client))
-            {
-                ClientsComboBox.Items.Add(otherClient);
-            }
+            //foreach (var otherClient in MainWindow.Clients.Where(c => c != client))
+            //{
+            //    ClientsComboBox.Items.Add(otherClient);
+            //}
         }
 
         private void TransferButton_Click(object sender, RoutedEventArgs e)
@@ -68,10 +69,10 @@ namespace BankA_MVVM_UI.Views
                     {
                         if (sourceAccount.Balance >= amount)
                         {
-                            sourceAccount.Withdraw(amount);
-                            selectedAccount.Deposit(amount);
+                            //sourceAccount.Withdraw(amount);
+                            //selectedAccount.Deposit(amount);
                             MessageBox.Show($"Средства успешно переведены на счет {selectedAccountNumber}");
-                            ClientDataHandler.SaveClients(MainWindow.Clients);
+                           // ClientDataHandler.SaveClients(MainWindow.Clients);
                             OperationLogWindow.AddOperationLog(new OperationLog(DateTime.Now, "Перевод на свой счет", client.Name, $"{sourceAccount.AccountNumber} -> {selectedAccount.AccountNumber}", amount));
                             this.Close();
                         }
@@ -95,22 +96,22 @@ namespace BankA_MVVM_UI.Views
 
                     if (sourceAccount.Balance >= amount)
                     {
-                        sourceAccount.Withdraw(amount);
+                        //sourceAccount.Withdraw(amount);
 
                         if (destinationAccount == null)
                         {
                             // Создание нового счета, если у клиента нет счетов
-                            destinationAccount = new DepositAccount(int.Parse(GenerateNewAccountNumber()), amount) { CreationDate = DateTime.Now };
+                           // destinationAccount = new DepositAccount(int.Parse(GenerateNewAccountNumber()), amount) { CreationDate = DateTime.Now };
                             selectedClient.Accounts.Add(destinationAccount);
                         }
                         else
                         {
                             // Пополнение первого счета, если счета уже существуют
-                            destinationAccount.Deposit(amount);
+                            //destinationAccount.Deposit(amount);
                         }
 
                         MessageBox.Show($"Средства успешно переведены на счет клиента {selectedClient.Name}");
-                        ClientDataHandler.SaveClients(MainWindow.Clients);
+                       // ClientDataHandler.SaveClients(MainWindow.Clients);
                         OperationLogWindow.AddOperationLog(new OperationLog(DateTime.Now, "Перевод другому клиенту", $"{client.Name} -> {selectedClient.Name}", $"{sourceAccount.AccountNumber} -> {destinationAccount.AccountNumber}", amount));
                         this.Close();
                     }
@@ -125,12 +126,13 @@ namespace BankA_MVVM_UI.Views
         private string GenerateNewAccountNumber()
         {
             Random rand = new Random();
-            int accountNumber;
-            do
-            {
-                accountNumber = rand.Next(100000000, 999999999);
-            } while (MainWindow.Clients.SelectMany(c => c.Accounts).Any(a => a.AccountNumber == accountNumber));
-            return accountNumber.ToString(); // Преобразование числа в строку
+            // int accountNumber;
+            //do
+            //{
+            //    accountNumber = rand.Next(100000000, 999999999);
+            //} while (MainWindow.Clients.SelectMany(c => c.Accounts).Any(a => a.AccountNumber == accountNumber));
+            // return accountNumber.ToString(); // Преобразование числа в строку
+            return "";
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)

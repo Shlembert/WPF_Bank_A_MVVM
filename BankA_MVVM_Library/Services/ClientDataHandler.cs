@@ -2,8 +2,6 @@
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
-using BankA_MVVM_Library.Models;
-using System;
 
 namespace BankA_MVVM_Library.Services
 {
@@ -27,11 +25,6 @@ namespace BankA_MVVM_Library.Services
                 return JsonConvert.DeserializeObject<List<Client>>(json, settings);
             }
             return new List<Client>();
-        }
-
-        public static void SaveClients(object clients)
-        {
-            throw new NotImplementedException();
         }
     }
 }

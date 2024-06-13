@@ -73,6 +73,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModels\ClientDetailsViewModel.cs" />
+    <Compile Include="ViewModels\NewClientWindowViewModel.cs" />
+    <Compile Include="Views\ClientDetailsWindow.xaml.cs">
+      <DependentUpon>ClientDetailsWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\NewAccountWindow.xaml.cs">
       <DependentUpon>NewAccountWindow.xaml</DependentUpon>
     </Compile>
@@ -85,6 +90,10 @@
     <Compile Include="Views\TransferWindow.xaml.cs">
       <DependentUpon>TransferWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\ClientDetailsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

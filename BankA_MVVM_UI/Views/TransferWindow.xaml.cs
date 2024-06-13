@@ -1,6 +1,4 @@
-﻿using BankA_MVVM.ViewModels;
-using BankA_MVVM_Library.Models;
-using BankA_MVVM_Library.Services;
+﻿using BankA_MVVM_Library.Models;
 using System;
 using System.Linq;
 using System.Windows;
@@ -72,7 +70,7 @@ namespace BankA_MVVM_UI.Views
                             //sourceAccount.Withdraw(amount);
                             //selectedAccount.Deposit(amount);
                             MessageBox.Show($"Средства успешно переведены на счет {selectedAccountNumber}");
-                           // ClientDataHandler.SaveClients(MainWindow.Clients);
+                            // ClientDataHandler.SaveClients(MainWindow.Clients);
                             OperationLogWindow.AddOperationLog(new OperationLog(DateTime.Now, "Перевод на свой счет", client.Name, $"{sourceAccount.AccountNumber} -> {selectedAccount.AccountNumber}", amount));
                             this.Close();
                         }
@@ -101,7 +99,7 @@ namespace BankA_MVVM_UI.Views
                         if (destinationAccount == null)
                         {
                             // Создание нового счета, если у клиента нет счетов
-                           // destinationAccount = new DepositAccount(int.Parse(GenerateNewAccountNumber()), amount) { CreationDate = DateTime.Now };
+                            // destinationAccount = new DepositAccount(int.Parse(GenerateNewAccountNumber()), amount) { CreationDate = DateTime.Now };
                             selectedClient.Accounts.Add(destinationAccount);
                         }
                         else
@@ -111,7 +109,7 @@ namespace BankA_MVVM_UI.Views
                         }
 
                         MessageBox.Show($"Средства успешно переведены на счет клиента {selectedClient.Name}");
-                       // ClientDataHandler.SaveClients(MainWindow.Clients);
+                        // ClientDataHandler.SaveClients(MainWindow.Clients);
                         OperationLogWindow.AddOperationLog(new OperationLog(DateTime.Now, "Перевод другому клиенту", $"{client.Name} -> {selectedClient.Name}", $"{sourceAccount.AccountNumber} -> {destinationAccount.AccountNumber}", amount));
                         this.Close();
                     }

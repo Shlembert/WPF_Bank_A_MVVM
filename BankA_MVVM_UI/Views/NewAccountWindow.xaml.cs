@@ -1,70 +1,22 @@
 ﻿using BankA_MVVM_Library.Models;
-using BankA_MVVM_Library.Services;
-using System;
+using BankA_MVVM_UI.ViewModels;
 using System.Windows;
 
 namespace BankA_MVVM_UI.Views
 {
     public partial class NewAccountWindow : Window
     {
-        public event EventHandler<Account> AccountAdded;
-
-        private Client client;
+        private NewAccountWindowViewModel _viewModel;
 
         public NewAccountWindow(Client client)
         {
             InitializeComponent();
-            this.client = client;
-        }
-
-        private string GenerateAccountNumber()
-        {
-            Random random = new Random();
-            return random.Next(100000000, 999999999).ToString();
-        }
-
-        private void GenerateButton_Click(object sender, RoutedEventArgs e)
-        {
-            string accountNumber = GenerateAccountNumber();
-            AccountNumberTextBox.Text = accountNumber;
-        }
-
-        private void DoneButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrEmpty(AccountNumberTextBox.Text))
+            _viewModel = new NewAccountWindowViewModel(client);
+            _viewModel.AccountAdded += (sender, account) =>
             {
-                MessageBox.Show("Сначала сгенерируйте номер счета.");
-                return;
-            }
-
-            string accountNumber = AccountNumberTextBox.Text.Replace(" ", "");
-            decimal initialBalance = 0;
-
-            Account newAccount = null;
-            if (DepositRadioButton.IsChecked == true)
-            {
-               // newAccount = new DepositAccount(int.Parse(accountNumber), initialBalance);
-            }
-            else if (NonDepositRadioButton.IsChecked == true)
-            {
-                newAccount = new NonDepositAccount(int.Parse(accountNumber), initialBalance);
-            }
-            else
-            {
-                MessageBox.Show("Выберите тип счета.");
-                return;
-            }
-
-           if(newAccount!=null)  client.Accounts.Add(newAccount);
-           // ClientDataHandler.SaveClients(MainWindow.Clients);
-            AccountAdded?.Invoke(this, newAccount);
-            OperationLogWindow.AddOperationLog(new OperationLog(DateTime.Now, "Создан новый счет", client.Name, accountNumber, initialBalance));
-            this.Close();
-        }
-
-        private void CancelButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
+                // Обработка события AccountAdded
+            };
+            DataContext = _viewModel;
         }
     }
 }

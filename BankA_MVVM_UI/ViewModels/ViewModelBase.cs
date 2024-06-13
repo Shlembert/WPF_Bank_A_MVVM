@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace BankA_MVVM.ViewModels
+namespace BankA_MVVM_UI.ViewModels
 {
     public class ViewModelBase : INotifyPropertyChanged
     {

@@ -1,7 +1,8 @@
 ﻿using BankA_MVVM_Library.Models;
+using BankA_MVVM_UI.Views;
 using System.Collections.ObjectModel;
 
-namespace BankA_MVVM.ViewModels
+namespace BankA_MVVM_UI.ViewModels
 {
     public class ClientDetailsViewModel : ViewModelBase
     {
@@ -27,8 +28,8 @@ namespace BankA_MVVM.ViewModels
 
         public void AddNewAccount()
         {
-            // Логика для добавления нового счета
-            // Например, открытие окна для ввода данных нового счета
+            NewAccountWindow newAccountWindow = new NewAccountWindow(Client);
+            newAccountWindow.ShowDialog(); // Используем ShowDialog для модального окна
         }
 
         public void DeleteSelectedAccount()
@@ -36,7 +37,6 @@ namespace BankA_MVVM.ViewModels
             if (SelectedAccount != null)
             {
                 Accounts.Remove(SelectedAccount);
-                // Также нужно удалить счет из клиента
                 Client.Accounts.Remove(SelectedAccount);
                 OnPropertyChanged(nameof(Accounts));
             }
@@ -45,25 +45,26 @@ namespace BankA_MVVM.ViewModels
         public void TransferBetweenAccounts()
         {
             // Логика для перевода между счетами
-            // Например, открытие окна для выбора счетов и суммы перевода
         }
 
         public void DepositToSelectedAccount()
         {
-            if (SelectedAccount != null)
-            {
-                // Логика для пополнения выбранного счета
-                // Например, открытие окна для ввода суммы пополнения
-            }
+            // Логика для пополнения счета
         }
 
         public void WithdrawFromSelectedAccount()
         {
-            if (SelectedAccount != null)
+            // Логика для списания средств со счета
+        }
+
+        public void RefreshAccounts()
+        {
+            Accounts.Clear();
+            foreach (var account in Client.Accounts)
             {
-                // Логика для списания средств с выбранного счета
-                // Например, открытие окна для ввода суммы списания
+                Accounts.Add(account);
             }
+            OnPropertyChanged(nameof(Accounts));
         }
     }
 }

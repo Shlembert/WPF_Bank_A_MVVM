@@ -1,5 +1,5 @@
-﻿using BankA_MVVM.ViewModels;
-using BankA_MVVM_Library.Models;
+﻿using BankA_MVVM_Library.Models;
+using BankA_MVVM_UI.ViewModels;
 using System;
 using System.Windows;
 

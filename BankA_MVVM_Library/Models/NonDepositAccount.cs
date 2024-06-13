@@ -7,6 +7,10 @@
         {
         }
 
+        public NonDepositAccount(int accountNumber, string accountType, decimal initialBalance) : base(accountNumber, accountType, initialBalance)
+        {
+        }
+
         public override void Deposit(decimal amount)
         {
             // Для недепозитного счета может быть другая логика для внесения средств

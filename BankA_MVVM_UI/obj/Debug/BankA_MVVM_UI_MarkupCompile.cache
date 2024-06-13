@@ -12,9 +12,9 @@ DEBUG;TRACE
 D:\GitHub\WPF_Bank_A_MVVM\BankA_MVVM_UI\App.xaml
 61452803780
 
-15-499316943
+16-1765764179
 20-1806032420
 Views\ClientDetailsWindow.xaml;Views\MainWindow.xaml;Views\NewAccountWindow.xaml;Views\NewClientWindow.xaml;Views\OperationLogWindow.xaml;Views\TransferWindow.xaml;
 
-False
+True
 

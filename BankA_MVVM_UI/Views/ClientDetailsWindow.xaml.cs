@@ -1,5 +1,5 @@
-﻿using BankA_MVVM.ViewModels;
-using BankA_MVVM_Library.Models;
+﻿using BankA_MVVM_Library.Models;
+using BankA_MVVM_UI.ViewModels;
 using System.Windows;
 
 namespace BankA_MVVM_UI.Views
@@ -18,6 +18,7 @@ namespace BankA_MVVM_UI.Views
         private void NewAccountButton_Click(object sender, RoutedEventArgs e)
         {
             _viewModel.AddNewAccount();
+            _viewModel.RefreshAccounts(); // Обновляем список счетов после добавления нового счета
         }
 
         private void DeleteAccountButton_Click(object sender, RoutedEventArgs e)

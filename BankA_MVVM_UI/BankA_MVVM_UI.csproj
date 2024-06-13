@@ -74,6 +74,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ViewModels\ClientDetailsViewModel.cs" />
+    <Compile Include="ViewModels\NewAccountWindowViewModel.cs" />
     <Compile Include="ViewModels\NewClientWindowViewModel.cs" />
     <Compile Include="Views\ClientDetailsWindow.xaml.cs">
       <DependentUpon>ClientDetailsWindow.xaml</DependentUpon>

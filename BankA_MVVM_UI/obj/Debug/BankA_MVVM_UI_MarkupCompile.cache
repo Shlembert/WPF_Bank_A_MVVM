@@ -16,5 +16,5 @@ D:\GitHub\WPF_Bank_A_MVVM\BankA_MVVM_UI\App.xaml
 20-1806032420
 Views\ClientDetailsWindow.xaml;Views\MainWindow.xaml;Views\NewAccountWindow.xaml;Views\NewClientWindow.xaml;Views\OperationLogWindow.xaml;Views\TransferWindow.xaml;
 
-True
+False
 

@@ -2,7 +2,7 @@
 using BankA_MVVM_UI.Views;
 using System.Collections.ObjectModel;
 
-namespace BankA_MVVM_UI.ViewModels
+namespace BankA_MVVM.ViewModels
 {
     public class ClientDetailsViewModel : ViewModelBase
     {

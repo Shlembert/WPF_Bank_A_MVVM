@@ -1,7 +1,7 @@
 ﻿<Window x:Class="BankA_MVVM_UI.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:viewModels="clr-namespace:BankA_MVVM_UI.ViewModels"
+        xmlns:viewModels="clr-namespace:BankA_MVVM.ViewModels"
         Title="Банковская система" Height="450" Width="800"
         WindowStartupLocation="CenterScreen">
     <Window.DataContext>

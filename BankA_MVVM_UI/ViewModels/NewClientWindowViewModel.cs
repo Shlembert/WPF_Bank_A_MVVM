@@ -4,7 +4,7 @@ using System;
 using System.Windows;
 using System.Windows.Input;
 
-namespace BankA_MVVM_UI.ViewModels
+namespace BankA_MVVM.ViewModels
 {
     public class NewClientWindowViewModel : ViewModelBase
     {

@@ -5,7 +5,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
 
-namespace BankA_MVVM_UI.ViewModels
+namespace BankA_MVVM.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {

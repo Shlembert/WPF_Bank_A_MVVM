@@ -28,7 +28,7 @@ namespace BankA_MVVM.ViewModels
             AddClientCommand = new RelayCommand(AddClient);
         }
 
-        private void AddClient()
+        private void AddClient(object parameter)
         {
             if (string.IsNullOrWhiteSpace(ClientName))
             {

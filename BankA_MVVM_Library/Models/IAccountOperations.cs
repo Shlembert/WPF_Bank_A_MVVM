@@ -1,7 +1,9 @@
-﻿namespace BankA_MVVM_Library.Models
+﻿using System;
+
+namespace BankA_MVVM_Library.Models
 {
-    public interface IAccountOperations<out T> where T : Account
+    public interface IAccountOperations<T> where T : Account
     {
-        T CreateAccount(int accountNumber, decimal initialBalance);
+        T CreateAccount(int id, int accountNumber, string accountType, decimal balance, DateTime createdDate);
     }
 }

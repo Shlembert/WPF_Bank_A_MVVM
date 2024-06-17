@@ -1,30 +1,32 @@
-﻿using BankA_MVVM_Library.Exceptions;
+﻿using System;
 
 namespace BankA_MVVM_Library.Models
 {
-    public abstract class Account
+    public class Account
     {
+        public int Id { get; set; }
         public int AccountNumber { get; set; }
         public string AccountType { get; set; }
         public decimal Balance { get; set; }
+        public DateTime CreatedDate { get; set; } // Дата создания счета
 
-        protected Account(int accountNumber, string accountType, decimal initialBalance)
+        public Account(int id, int accountNumber, string accountType, decimal balance, DateTime createdDate)
         {
+            Id = id;
             AccountNumber = accountNumber;
             AccountType = accountType;
-            Balance = initialBalance;
+            Balance = balance;
+            CreatedDate = createdDate;
         }
 
-        public abstract void Deposit(decimal amount);
-
-        public virtual bool Withdraw(decimal amount)
+        public virtual void Deposit(decimal amount)
         {
-            if (amount > Balance)
-            {
-                throw new InsufficientFundsException("Недостаточно средств на счете для выполнения операции.");
-            }
+            Balance += amount;
+        }
+
+        public virtual void Withdraw(decimal amount)
+        {
             Balance -= amount;
-            return true;
         }
     }
 }

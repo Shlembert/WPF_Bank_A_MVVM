@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using BankA_MVVM.ViewModels;
 
 namespace BankA_MVVM_UI.Views
 {
@@ -7,6 +8,7 @@ namespace BankA_MVVM_UI.Views
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
         }
     }
 }

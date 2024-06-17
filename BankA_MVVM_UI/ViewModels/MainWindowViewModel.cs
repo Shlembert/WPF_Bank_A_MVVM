@@ -1,9 +1,11 @@
-﻿using BankA_MVVM_Library.Models;
-using BankA_MVVM_Library.Services;
-using BankA_MVVM_UI.Views;
+﻿using System;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
+using BankA_MVVM_Library.Models;
+using BankA_MVVM_Library.Services;
+using BankA_MVVM_UI.Views;
+using System.Diagnostics; // Добавь это для использования Debug.WriteLine
 
 namespace BankA_MVVM.ViewModels
 {
@@ -21,7 +23,7 @@ namespace BankA_MVVM.ViewModels
             {
                 _selectedClient = value;
                 OnPropertyChanged();
-                OpenClientDetailsWindow(); // Открываем окно с данными клиента при выборе клиента
+                OpenClientDetailsWindow();
             }
         }
 
@@ -30,11 +32,12 @@ namespace BankA_MVVM.ViewModels
 
         public MainWindowViewModel(IClientDataHandler clientDataHandler)
         {
-            _clientDataHandler = clientDataHandler;
+            Debug.WriteLine("MainWindowViewModel constructor called");
+            _clientDataHandler = clientDataHandler ?? throw new ArgumentNullException(nameof(clientDataHandler));
             LoadClients();
 
-            NewClientCommand = new RelayCommand(OpenNewClientWindow);
-            OpenLogCommand = new RelayCommand(OpenLogWindow);
+            NewClientCommand = new RelayCommand(param => OpenNewClientWindow());
+            OpenLogCommand = new RelayCommand(param => OpenLogWindow());
         }
 
         // Пустой конструктор для XAML-дизайнера

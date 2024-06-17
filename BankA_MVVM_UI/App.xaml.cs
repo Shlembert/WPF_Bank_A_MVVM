@@ -8,8 +8,6 @@ namespace BankA_MVVM_UI
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
         }
     }
 }

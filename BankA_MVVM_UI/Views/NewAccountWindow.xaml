@@ -6,16 +6,16 @@
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
             <TextBlock Text="Тип счета:" FontSize="16" Margin="0,0,0,10"/>
             <RadioButton Content="Депозитный"
-             GroupName="AccountType"
-             IsChecked="{Binding IsDepositAccount, Mode=TwoWay}"/>
+                         GroupName="AccountType"
+                         IsChecked="{Binding IsDepositAccount, Mode=TwoWay}"/>
 
             <RadioButton Content="Не депозитный"
-             GroupName="AccountType"
-             IsChecked="{Binding IsNonDepositAccount, Mode=TwoWay}"/>
+                         GroupName="AccountType"
+                         IsChecked="{Binding IsNonDepositAccount, Mode=TwoWay}"/>
             <TextBox Width="200" Margin="0,0,0,20" Text="{Binding AccountNumber}" IsReadOnly="True"/>
 
             <Button Content="Сгенерировать" Width="150" HorizontalAlignment="Center" Margin="0,0,0,10" 
-                    Command="{Binding GenerateAccountNumberCommand}"/>
+        Command="{Binding GenerateAccountNumberCommand}"/>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Content="Готово" Width="100" Margin="0,0,10,0" Command="{Binding DoneCommand}"/>

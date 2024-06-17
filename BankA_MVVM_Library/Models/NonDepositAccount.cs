@@ -1,30 +1,35 @@
-﻿namespace BankA_MVVM_Library.Models
+﻿using BankA_MVVM_Library.Models;
+using Newtonsoft.Json;
+using System;
+
+[JsonObject(MemberSerialization.OptIn)]
+public class NonDepositAccount : Account
 {
-    public class NonDepositAccount : Account
+    private string accountType1;
+
+    [JsonConstructor]
+    public NonDepositAccount(int id,int accountNumber, string accountType, 
+        decimal balance, DateTime createdDate)
+        : base(id, accountNumber, accountType, balance, createdDate)
     {
-        public NonDepositAccount(int accountNumber, decimal initialBalance)
-            : base(accountNumber, "Non-Deposit", initialBalance) // Указываем тип счета для недепозитного счета
-        {
-        }
+    }
 
-        public NonDepositAccount(int accountNumber, string accountType, decimal initialBalance) : base(accountNumber, accountType, initialBalance)
-        {
-        }
+    public NonDepositAccount(int id, int accountNumber, string accountType,
+        decimal balance, string accountType1, DateTime createdDate) 
+        : this(id, accountNumber, accountType, balance, createdDate)
+    {
+        this.accountType1 = accountType1;
+    }
 
-        public override void Deposit(decimal amount)
-        {
-            // Для недепозитного счета может быть другая логика для внесения средств
-            Balance += amount;
-        }
+    public override void Deposit(decimal amount)
+    {
+        base.Deposit(amount);
+        // Дополнительная логика для не депозитного счета
+    }
 
-        public override bool Withdraw(decimal amount)
-        {
-            if (amount > Balance)
-            {
-                return false; // Недостаточно средств
-            }
-            Balance -= amount;
-            return true;
-        }
+    public override void Withdraw(decimal amount)
+    {
+        base.Withdraw(amount);
+        // Дополнительная логика для не депозитного счета
     }
 }

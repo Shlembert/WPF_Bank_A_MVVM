@@ -7,25 +7,11 @@
       "Name": "Вася",
       "Accounts": {
         "$type": "System.Collections.Generic.List`1[[BankA_MVVM_Library.Models.Account, BankA_MVVM_Library]], mscorlib",
-        "$values": []
-      }
-    },
-    {
-      "$type": "BankA_MVVM_Library.Models.Client, BankA_MVVM_Library",
-      "Id": 0,
-      "Name": "Петя",
-      "Accounts": {
-        "$type": "System.Collections.Generic.List`1[[BankA_MVVM_Library.Models.Account, BankA_MVVM_Library]], mscorlib",
-        "$values": []
-      }
-    },
-    {
-      "$type": "BankA_MVVM_Library.Models.Client, BankA_MVVM_Library",
-      "Id": 0,
-      "Name": "Толя",
-      "Accounts": {
-        "$type": "System.Collections.Generic.List`1[[BankA_MVVM_Library.Models.Account, BankA_MVVM_Library]], mscorlib",
-        "$values": []
+        "$values": [
+          {
+            "$type": "BankAccount, BankA_MVVM_Library"
+          }
+        ]
       }
     }
   ]

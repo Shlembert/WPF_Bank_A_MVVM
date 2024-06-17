@@ -1,25 +1,25 @@
-﻿namespace BankA_MVVM_Library.Models
+﻿using BankA_MVVM_Library.Models;
+using Newtonsoft.Json;
+using System;
+
+[JsonObject(MemberSerialization.OptIn)]
+public class BankAccount : Account
 {
-    public class BankAccount : Account
+    [JsonConstructor]
+    public BankAccount(int id, int accountNumber, string accountType, decimal balance, DateTime createdDate)
+        : base(id, accountNumber, accountType, balance, createdDate)
     {
-        public BankAccount(int accountNumber, string accountType, decimal initialBalance)
-            : base(accountNumber, accountType, initialBalance)
-        {
-        }
+    }
 
-        public override void Deposit(decimal amount)
-        {
-            Balance += amount;
-        }
+    public override void Deposit(decimal amount)
+    {
+        base.Deposit(amount);
+        // Дополнительная логика для банковского счета, если необходимо
+    }
 
-        public override bool Withdraw(decimal amount)
-        {
-            if (amount > Balance)
-            {
-                return false; // Недостаточно средств
-            }
-            Balance -= amount;
-            return true;
-        }
+    public override void Withdraw(decimal amount)
+    {
+        base.Withdraw(amount);
+        // Дополнительная логика для банковского счета, если необходимо
     }
 }

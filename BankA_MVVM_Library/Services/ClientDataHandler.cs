@@ -11,7 +11,10 @@ namespace BankA_MVVM_Library.Services
 
         public void SaveClients(List<Client> clients)
         {
-            var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+            var settings = new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.All
+            };
             var json = JsonConvert.SerializeObject(clients, Formatting.Indented, settings);
             File.WriteAllText(filePath, json);
         }
@@ -20,7 +23,10 @@ namespace BankA_MVVM_Library.Services
         {
             if (File.Exists(filePath))
             {
-                var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+                var settings = new JsonSerializerSettings
+                {
+                    TypeNameHandling = TypeNameHandling.All
+                };
                 var json = File.ReadAllText(filePath);
                 return JsonConvert.DeserializeObject<List<Client>>(json, settings);
             }

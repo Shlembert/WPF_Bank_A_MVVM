@@ -16,3 +16,12 @@ D:\GitHub\WPF_Bank_A_MVVM\BankA_MVVM_Library\obj\Debug\BankA_MVVM_Library.csproj
 D:\GitHub\WPF_Bank_A_MVVM\BankA_MVVM_Library\obj\Debug\BankA_MV.9EC1EDEF.Up2Date
 D:\GitHub\WPF_Bank_A_MVVM\BankA_MVVM_Library\obj\Debug\BankA_MVVM_Library.dll
 D:\GitHub\WPF_Bank_A_MVVM\BankA_MVVM_Library\obj\Debug\BankA_MVVM_Library.pdb
+D:\Git\WPF_Bank_A_MVVM\BankA_MVVM_Library\bin\Debug\BankA_MVVM_Library.dll
+D:\Git\WPF_Bank_A_MVVM\BankA_MVVM_Library\bin\Debug\BankA_MVVM_Library.pdb
+D:\Git\WPF_Bank_A_MVVM\BankA_MVVM_Library\bin\Debug\Newtonsoft.Json.dll
+D:\Git\WPF_Bank_A_MVVM\BankA_MVVM_Library\bin\Debug\Newtonsoft.Json.xml
+D:\Git\WPF_Bank_A_MVVM\BankA_MVVM_Library\obj\Debug\BankA_MVVM_Library.csproj.AssemblyReference.cache
+D:\Git\WPF_Bank_A_MVVM\BankA_MVVM_Library\obj\Debug\BankA_MVVM_Library.csproj.CoreCompileInputs.cache
+D:\Git\WPF_Bank_A_MVVM\BankA_MVVM_Library\obj\Debug\BankA_MV.9EC1EDEF.Up2Date
+D:\Git\WPF_Bank_A_MVVM\BankA_MVVM_Library\obj\Debug\BankA_MVVM_Library.dll
+D:\Git\WPF_Bank_A_MVVM\BankA_MVVM_Library\obj\Debug\BankA_MVVM_Library.pdb

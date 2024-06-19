@@ -18,8 +18,10 @@ namespace BankA_MVVM_UI.Views
 
         private void NewAccountButton_Click(object sender, RoutedEventArgs e)
         {
-            _viewModel.AddNewAccount();
-            _viewModel.RefreshAccounts(); // Обновляем список счетов после добавления нового счета
+            if (DataContext is ClientDetailsViewModel viewModel)
+            {
+                viewModel.AddNewAccount();
+            }
         }
 
         private void DeleteAccountButton_Click(object sender, RoutedEventArgs e)

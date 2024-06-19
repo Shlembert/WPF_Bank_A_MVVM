@@ -2,28 +2,21 @@
 
 public abstract class Account
 {
-    public int Id { get; }
-    public string AccountNumber { get; }
-    public string AccountType { get; }
-    public decimal Balance { get; private set; }
-    public DateTime CreatedDate { get; }
+    public int Id { get; set; }
+    public string AccountNumber { get; set; }
+    public string AccountType { get; set; }
+    public decimal Balance { get; set; }
+    public DateTime CreationDate { get; set; }
 
-    protected Account(int id, string accountNumber, string accountType, decimal balance, DateTime createdDate)
+    protected Account(int id, string accountNumber, string accountType, decimal balance, DateTime creationDate)
     {
         Id = id;
         AccountNumber = accountNumber;
         AccountType = accountType;
         Balance = balance;
-        CreatedDate = createdDate;
+        CreationDate = creationDate;
     }
 
-    public virtual void Deposit(decimal amount)
-    {
-        Balance += amount;
-    }
-
-    public virtual void Withdraw(decimal amount)
-    {
-        Balance -= amount;
-    }
+    public abstract void Deposit(decimal amount);
+    public abstract void Withdraw(decimal amount);
 }

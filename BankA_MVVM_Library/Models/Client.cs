@@ -1,26 +1,15 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace BankA_MVVM_Library.Models
+public class Client
 {
-    [JsonObject(MemberSerialization.OptIn)]
-    public class Client
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public List<Account> Accounts { get; set; }
+
+    public Client(int id, string name)
     {
-        [JsonProperty]
-        public int Id { get; set; }
-
-        [JsonProperty]
-        public string Name { get; set; }
-
-        [JsonProperty]
-        public List<Account> Accounts { get; set; }
-
-        [JsonConstructor]
-        public Client(int id, string name, List<Account> accounts = null)
-        {
-            Id = id;
-            Name = name;
-            Accounts = accounts ?? new List<Account>();
-        }
+        Id = id;
+        Name = name;
+        Accounts = new List<Account>();
     }
 }

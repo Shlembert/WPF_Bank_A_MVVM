@@ -1,6 +1,4 @@
-﻿using BankA_MVVM_Library.Models;
-using BankA_MVVM_Library.Services;
-using BankA_MVVM_UI.Views;
+﻿using BankA_MVVM_UI.Views;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 
@@ -103,7 +101,7 @@ namespace BankA_MVVM.ViewModels
                 SelectedAccountDetails = $"Номер счета: {SelectedAccount.AccountNumber}\n" +
                                          $"Баланс: {SelectedAccount.Balance}\n" +
                                          $"Тип счета: {SelectedAccount.AccountType}\n" +
-                                         $"Дата создания: {SelectedAccount.CreatedDate}";
+                                         $"Дата создания: {SelectedAccount.CreationDate}";
             }
             else
             {

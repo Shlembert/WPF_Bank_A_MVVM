@@ -38,7 +38,7 @@ namespace BankA_MVVM.ViewModels
 
             try
             {
-                Client newClient = new Client(0, ClientName);
+                Client newClient = new Client(0, ClientName); // Создание клиента с id и именем
                 ClientAdded?.Invoke(this, newClient);
             }
             catch (EmptyNameException ex)

@@ -1,10 +1,9 @@
-﻿using BankA_MVVM_Library.Models;
-using BankA_MVVM_Library.Services;
-using System;
+﻿using BankA_MVVM.ViewModels;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Input;
 using System.Windows;
+using System;
 
 public class NewAccountWindowViewModel : INotifyPropertyChanged
 {
@@ -106,6 +105,10 @@ public class NewAccountWindowViewModel : INotifyPropertyChanged
             clients.Add(_client);
         }
         _clientDataHandler.SaveClients(clients);
+
+        // Уведомляем ViewModel клиента об изменениях
+        var viewModel = Application.Current.MainWindow.DataContext as ClientDetailsViewModel;
+        viewModel?.RefreshAccounts();
     }
 
     private void GenerateAccountNumber(object parameter)

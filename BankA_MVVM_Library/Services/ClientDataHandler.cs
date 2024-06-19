@@ -1,36 +1,27 @@
 ﻿using BankA_MVVM_Library.Models;
+using BankA_MVVM_Library.Services;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
 
-namespace BankA_MVVM_Library.Services
+public class ClientDataHandler : IClientDataHandler
 {
-    public class ClientDataHandler : IClientDataHandler
+    private const string FilePath = "clients.json";
+
+    public List<Client> LoadClients()
     {
-        private static string filePath = "clients.json";
-
-        public void SaveClients(List<Client> clients)
+        if (!File.Exists(FilePath))
         {
-            var settings = new JsonSerializerSettings
-            {
-                TypeNameHandling = TypeNameHandling.All
-            };
-            var json = JsonConvert.SerializeObject(clients, Formatting.Indented, settings);
-            File.WriteAllText(filePath, json);
-        }
-
-        public List<Client> LoadClients()
-        {
-            if (File.Exists(filePath))
-            {
-                var settings = new JsonSerializerSettings
-                {
-                    TypeNameHandling = TypeNameHandling.All
-                };
-                var json = File.ReadAllText(filePath);
-                return JsonConvert.DeserializeObject<List<Client>>(json, settings);
-            }
             return new List<Client>();
         }
+
+        var json = File.ReadAllText(FilePath);
+        return JsonConvert.DeserializeObject<List<Client>>(json);
+    }
+
+    public void SaveClients(List<Client> clients)
+    {
+        var json = JsonConvert.SerializeObject(clients, Formatting.Indented);
+        File.WriteAllText(FilePath, json);
     }
 }

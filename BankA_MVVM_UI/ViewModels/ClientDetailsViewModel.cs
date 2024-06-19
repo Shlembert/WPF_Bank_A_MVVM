@@ -1,6 +1,8 @@
 ﻿using BankA_MVVM_Library.Models;
+using BankA_MVVM_Library.Services;
 using BankA_MVVM_UI.Views;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
 
 namespace BankA_MVVM.ViewModels
 {
@@ -8,7 +10,9 @@ namespace BankA_MVVM.ViewModels
     {
         public Client Client { get; private set; }
         public ObservableCollection<Account> Accounts { get; private set; }
+        private readonly IClientDataHandler _clientDataHandler;
         private Account _selectedAccount;
+        private string _selectedAccountDetails;
 
         public Account SelectedAccount
         {
@@ -17,19 +21,43 @@ namespace BankA_MVVM.ViewModels
             {
                 _selectedAccount = value;
                 OnPropertyChanged();
+                UpdateSelectedAccountDetails();
             }
         }
 
-        public ClientDetailsViewModel(Client client)
+        public string SelectedAccountDetails
+        {
+            get => _selectedAccountDetails;
+            set
+            {
+                _selectedAccountDetails = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public ClientDetailsViewModel(Client client, IClientDataHandler clientDataHandler)
         {
             Client = client;
+            _clientDataHandler = clientDataHandler;
             Accounts = new ObservableCollection<Account>(client.Accounts);
+            UpdateSelectedAccountDetails(); // Обновляем детали выбранного счета при инициализации
         }
+
+        public ICommand NewAccountCommand => new RelayCommand(AddNewAccount);
 
         public void AddNewAccount()
         {
-            NewAccountWindow newAccountWindow = new NewAccountWindow(Client);
-            newAccountWindow.ShowDialog(); // Используем ShowDialog для модального окна
+            var newAccountWindow = new NewAccountWindow(Client);
+            newAccountWindow.AccountAdded += (s, e) =>
+            {
+                Accounts.Add(e);
+                SaveClientsToJson(); // Сохраняем клиентов после добавления нового счета
+
+                // Обновляем выбранный счет и его детали
+                SelectedAccount = e;
+                UpdateSelectedAccountDetails();
+            };
+            newAccountWindow.ShowDialog();
         }
 
         public void DeleteSelectedAccount()
@@ -38,6 +66,7 @@ namespace BankA_MVVM.ViewModels
             {
                 Accounts.Remove(SelectedAccount);
                 Client.Accounts.Remove(SelectedAccount);
+                SaveClientsToJson();
                 OnPropertyChanged(nameof(Accounts));
             }
         }
@@ -65,6 +94,33 @@ namespace BankA_MVVM.ViewModels
                 Accounts.Add(account);
             }
             OnPropertyChanged(nameof(Accounts));
+        }
+
+        private void UpdateSelectedAccountDetails()
+        {
+            if (SelectedAccount != null)
+            {
+                SelectedAccountDetails = $"Номер счета: {SelectedAccount.AccountNumber}\n" +
+                                         $"Баланс: {SelectedAccount.Balance}\n" +
+                                         $"Тип счета: {SelectedAccount.AccountType}\n" +
+                                         $"Дата создания: {SelectedAccount.CreatedDate}";
+            }
+            else
+            {
+                SelectedAccountDetails = string.Empty;
+            }
+        }
+
+        private void SaveClientsToJson()
+        {
+            var clients = _clientDataHandler.LoadClients();
+            var existingClient = clients.Find(c => c.Id == Client.Id);
+            if (existingClient != null)
+            {
+                clients.Remove(existingClient);
+            }
+            clients.Add(Client); // Добавляем обновленного клиента
+            _clientDataHandler.SaveClients(clients); // Сохраняем изменения
         }
     }
 }

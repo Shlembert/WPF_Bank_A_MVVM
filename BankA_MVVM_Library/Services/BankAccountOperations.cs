@@ -1,8 +1,9 @@
-﻿using System;
+﻿using BankA_MVVM_Library.Models;
+using System;
 
-namespace BankA_MVVM_Library.Models
+namespace BankA_MVVM_Library.Services
 {
-    public class AccountOperations : IAccountOperations<BankAccount>
+    public class BankAccountOperations : IAccountOperations<BankAccount>
     {
         public BankAccount CreateAccount(int id, string accountNumber, string accountType, decimal balance, DateTime createdDate)
         {

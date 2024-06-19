@@ -6,7 +6,7 @@ using System;
 public class BankAccount : Account
 {
     [JsonConstructor]
-    public BankAccount(int id, int accountNumber, string accountType, decimal balance, DateTime createdDate)
+    public BankAccount(int id, string accountNumber, string accountType, decimal balance, DateTime createdDate)
         : base(id, accountNumber, accountType, balance, createdDate)
     {
     }

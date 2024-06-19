@@ -75,7 +75,7 @@ namespace BankA_MVVM.ViewModels
         {
             if (SelectedClient != null)
             {
-                var clientDetailsWindow = new ClientDetailsWindow(SelectedClient);
+                var clientDetailsWindow = new ClientDetailsWindow(SelectedClient, _clientDataHandler);
                 clientDetailsWindow.Show();
             }
         }

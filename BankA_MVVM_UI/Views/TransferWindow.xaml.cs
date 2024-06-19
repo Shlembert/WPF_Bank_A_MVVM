@@ -62,27 +62,27 @@ namespace BankA_MVVM_UI.Views
                 if (AccountsComboBox.SelectedItem != null)
                 {
                     int selectedAccountNumber = (int)AccountsComboBox.SelectedItem;
-                    Account selectedAccount = client.Accounts.FirstOrDefault(account => account.AccountNumber == selectedAccountNumber);
-                    if (selectedAccount != null)
-                    {
-                        if (sourceAccount.Balance >= amount)
-                        {
-                            //sourceAccount.Withdraw(amount);
-                            //selectedAccount.Deposit(amount);
-                            MessageBox.Show($"Средства успешно переведены на счет {selectedAccountNumber}");
-                            // ClientDataHandler.SaveClients(MainWindow.Clients);
-                            OperationLogWindow.AddOperationLog(new OperationLog(DateTime.Now, "Перевод на свой счет", client.Name, $"{sourceAccount.AccountNumber} -> {selectedAccount.AccountNumber}", amount));
-                            this.Close();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Недостаточно средств на счете для перевода.");
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Выберите счет для перевода.");
-                    }
+                   // Account selectedAccount = client.Accounts.FirstOrDefault(account => account.AccountNumber == selectedAccountNumber);
+                    //if (selectedAccount != null)
+                    //{
+                    //    if (sourceAccount.Balance >= amount)
+                    //    {
+                    //        //sourceAccount.Withdraw(amount);
+                    //        //selectedAccount.Deposit(amount);
+                    //        MessageBox.Show($"Средства успешно переведены на счет {selectedAccountNumber}");
+                    //        // ClientDataHandler.SaveClients(MainWindow.Clients);
+                    //        OperationLogWindow.AddOperationLog(new OperationLog(DateTime.Now, "Перевод на свой счет", client.Name, $"{sourceAccount.AccountNumber} -> {selectedAccount.AccountNumber}", amount));
+                    //        this.Close();
+                    //    }
+                    //    else
+                    //    {
+                    //        MessageBox.Show("Недостаточно средств на счете для перевода.");
+                    //    }
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Выберите счет для перевода.");
+                    //}
                 }
             }
             else if (OtherClientTransferRadioButton.IsChecked == true)

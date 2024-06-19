@@ -12,7 +12,7 @@
             <RadioButton Content="Не депозитный"
                          GroupName="AccountType"
                          IsChecked="{Binding IsNonDepositAccount, Mode=TwoWay}"/>
-            <TextBox Width="200" Margin="0,0,0,20" Text="{Binding AccountNumber}" IsReadOnly="True"/>
+            <TextBox Width="200" Margin="0,0,0,20" Text="{Binding GeneratedAccountNumber}" IsReadOnly="True"/>
 
             <Button Content="Сгенерировать" Width="150" HorizontalAlignment="Center" Margin="0,0,0,10" 
         Command="{Binding GenerateAccountNumberCommand}"/>

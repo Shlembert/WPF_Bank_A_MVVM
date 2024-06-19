@@ -59,8 +59,8 @@
     <Compile Include="Models\NonDepositAccount.cs" />
     <Compile Include="Models\OperationLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\BankAccountOperations.cs" />
     <Compile Include="Services\ClientDataHandler.cs" />
-    <Compile Include="Services\IAccountOperations.cs" />
     <Compile Include="Services\IClientDataHandler.cs" />
     <Compile Include="Services\ITransferOperations.cs" />
   </ItemGroup>

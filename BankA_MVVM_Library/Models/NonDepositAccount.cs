@@ -8,13 +8,13 @@ public class NonDepositAccount : Account
     private string accountType1;
 
     [JsonConstructor]
-    public NonDepositAccount(int id,int accountNumber, string accountType, 
+    public NonDepositAccount(int id,string accountNumber, string accountType, 
         decimal balance, DateTime createdDate)
         : base(id, accountNumber, accountType, balance, createdDate)
     {
     }
 
-    public NonDepositAccount(int id, int accountNumber, string accountType,
+    public NonDepositAccount(int id, string accountNumber, string accountType,
         decimal balance, string accountType1, DateTime createdDate) 
         : this(id, accountNumber, accountType, balance, createdDate)
     {

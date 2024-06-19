@@ -1,4 +1,5 @@
 ﻿using BankA_MVVM_Library.Models;
+using BankA_MVVM_Library.Services;
 using BankA_MVVM.ViewModels;
 using System.Windows;
 
@@ -8,10 +9,10 @@ namespace BankA_MVVM_UI.Views
     {
         private ClientDetailsViewModel _viewModel;
 
-        public ClientDetailsWindow(Client client)
+        public ClientDetailsWindow(Client client, IClientDataHandler clientDataHandler)
         {
             InitializeComponent();
-            _viewModel = new ClientDetailsViewModel(client);
+            _viewModel = new ClientDetailsViewModel(client, clientDataHandler);
             DataContext = _viewModel;
         }
 

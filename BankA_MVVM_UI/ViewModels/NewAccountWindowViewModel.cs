@@ -1,135 +1,143 @@
-﻿using System;
-using System.ComponentModel;
-using System.Windows.Input;
-using BankA_MVVM.ViewModels;
-using BankA_MVVM_Library.Models;
+﻿using BankA_MVVM_Library.Models;
 using BankA_MVVM_Library.Services;
+using System;
+using System.ComponentModel;
+using System.Linq;
+using System.Windows.Input;
+using System.Windows;
 
-namespace BankA_MVVM_UI.ViewModels
+public class NewAccountWindowViewModel : INotifyPropertyChanged
 {
-    public class NewAccountWindowViewModel : INotifyPropertyChanged
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    private bool _isDepositAccount;
+    public bool IsDepositAccount
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private bool _isDepositAccount;
-        public bool IsDepositAccount
+        get { return _isDepositAccount; }
+        set
         {
-            get { return _isDepositAccount; }
-            set
+            if (_isDepositAccount != value)
             {
-                if (_isDepositAccount != value)
-                {
-                    _isDepositAccount = value;
-                    OnPropertyChanged(nameof(IsDepositAccount));
-                    OnPropertyChanged(nameof(IsNonDepositAccount));
-                }
+                _isDepositAccount = value;
+                OnPropertyChanged(nameof(IsDepositAccount));
+                OnPropertyChanged(nameof(IsNonDepositAccount));
             }
         }
+    }
 
-        public bool IsNonDepositAccount
+    public bool IsNonDepositAccount
+    {
+        get { return !_isDepositAccount; }
+        set
         {
-            get { return !_isDepositAccount; }
-            set
+            if (_isDepositAccount != value)
             {
-                if (_isDepositAccount != value)
-                {
-                    _isDepositAccount = !value;
-                    OnPropertyChanged(nameof(IsDepositAccount));
-                    OnPropertyChanged(nameof(IsNonDepositAccount));
-                }
+                _isDepositAccount = !value;
+                OnPropertyChanged(nameof(IsDepositAccount));
+                OnPropertyChanged(nameof(IsNonDepositAccount));
             }
         }
+    }
 
-        public event EventHandler<Account> AccountAdded;
-        private readonly Client _client;
-        private readonly IClientDataHandler _clientDataHandler;
-        private readonly BankA_MVVM_Library.Models.IAccountOperations<BankAccount> _accountOperations;
-
-        public NewAccountWindowViewModel(Client client, IClientDataHandler clientDataHandler, BankA_MVVM_Library.Models.IAccountOperations<BankAccount> accountOperations)
+    private string _generatedAccountNumber = string.Empty;
+    public string GeneratedAccountNumber
+    {
+        get { return _generatedAccountNumber; }
+        set
         {
-            _client = client ?? throw new ArgumentNullException(nameof(client));
-            _clientDataHandler = clientDataHandler ?? throw new ArgumentNullException(nameof(clientDataHandler));
-            _accountOperations = accountOperations ?? throw new ArgumentNullException(nameof(accountOperations));
-
-            DoneCommand = new RelayCommand(AddAccount);
-            CancelCommand = new RelayCommand(Cancel);
-            GenerateAccountNumberCommand = new RelayCommand(GenerateAccountNumber);
+            _generatedAccountNumber = value;
+            OnPropertyChanged(nameof(GeneratedAccountNumber));
         }
+    }
 
-        public ICommand DoneCommand { get; private set; }
-        public ICommand CancelCommand { get; private set; }
-        public ICommand GenerateAccountNumberCommand { get; private set; }
+    public event EventHandler<Account> AccountAdded;
+    private readonly Client _client;
+    private readonly IClientDataHandler _clientDataHandler;
+    private readonly IAccountOperations<BankAccount> _accountOperations;
 
-        private void AddAccount(object parameter)
+    public NewAccountWindowViewModel(Client client, IClientDataHandler clientDataHandler, IAccountOperations<BankAccount> accountOperations)
+    {
+        _client = client ?? throw new ArgumentNullException(nameof(client));
+        _clientDataHandler = clientDataHandler ?? throw new ArgumentNullException(nameof(clientDataHandler));
+        _accountOperations = accountOperations ?? throw new ArgumentNullException(nameof(accountOperations));
+
+        DoneCommand = new RelayCommand(AddAccount);
+        CancelCommand = new RelayCommand(Cancel);
+        GenerateAccountNumberCommand = new RelayCommand(GenerateAccountNumber);
+    }
+
+    public ICommand DoneCommand { get; private set; }
+    public ICommand CancelCommand { get; private set; }
+    public ICommand GenerateAccountNumberCommand { get; private set; }
+
+    private void AddAccount(object parameter)
+    {
+        string accountType = IsDepositAccount ? "Депозитный" : "Не депозитный";
+        BankAccount newAccount = CreateAccount(accountType);
+        if (newAccount != null)
         {
-            string accountType = IsDepositAccount ? "Депозитный" : "Не депозитный";
-            BankAccount newAccount = CreateAccount(accountType);
-            if (newAccount != null)
-            {
-                AccountAdded?.Invoke(this, newAccount);
-                SaveAccount(newAccount);
-            }
+            AccountAdded?.Invoke(this, newAccount);
+            SaveAccount(newAccount);
+            CloseWindow();
         }
+    }
 
-        private BankAccount CreateAccount(string accountType)
+    private BankAccount CreateAccount(string accountType)
+    {
+        string accountNumber = GeneratedAccountNumber;
+        decimal initialBalance = 0;
+        DateTime createdDate = DateTime.Now;
+        int id = 0; // или другая логика генерации id
+
+        return _accountOperations.CreateAccount(id, accountNumber, accountType, initialBalance, createdDate);
+    }
+
+    private void SaveAccount(Account account)
+    {
+        var clients = _clientDataHandler.LoadClients();
+        var existingClient = clients.Find(c => c.Id == _client.Id);
+        if (existingClient != null)
         {
-            int accountId = GenerateAccountId();
-            int accountNumber = GenerateAccountNumber();
-            decimal initialBalance = 0;
-            DateTime createdDate = DateTime.Now;
-
-            return _accountOperations.CreateAccount(accountId, accountNumber, accountType, initialBalance, createdDate);
+            existingClient.Accounts.Add(account);
         }
-
-        private void SaveAccount(Account account)
+        else
         {
-            var clients = _clientDataHandler.LoadClients();
-            var existingClient = clients.Find(c => c.Id == _client.Id);
-            if (existingClient != null)
-            {
-                existingClient.Accounts.Add(account);
-            }
-            else
-            {
-                _client.Accounts.Add(account);
-                clients.Add(_client);
-            }
-            _clientDataHandler.SaveClients(clients);
+            _client.Accounts.Add(account);
+            clients.Add(_client);
         }
+        _clientDataHandler.SaveClients(clients);
+    }
 
-        private int GenerateAccountId()
-        {
-            // Логика генерации ID счета
-            return 0; // Замените на вашу реализацию
-        }
+    private void GenerateAccountNumber(object parameter)
+    {
+        GeneratedAccountNumber = GenerateNumber();
+    }
 
-        private int GenerateAccountNumber()
+    private string GenerateNumber()
+    {
+        var random = new Random();
+        var accountNumber = new char[20];
+        for (int i = 0; i < accountNumber.Length; i++)
         {
-            // Логика генерации номера счета
-            return 0; // Замените на вашу реализацию
+            accountNumber[i] = (char)('0' + random.Next(10));
         }
+        return string.Join(" ", Enumerable.Range(0, 5).Select(i => new string(accountNumber, i * 4, 4)));
+    }
 
-        private void GenerateAccountNumber(object parameter)
-        {
-            // Логика генерации номера счета
-            int accountNumber = GenerateNumber();
-            // Вызов метода или логика, связанная с сгенерированным номером счета
-        }
+    private void Cancel()
+    {
+        var window = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.IsActive);
+        window?.Close();
+    }
 
-        private void Cancel(object parameter)
-        {
-            // Логика отмены операции (закрытие окна или что-то еще)
-        }
+    private void CloseWindow()
+    {
+        var window = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.IsActive);
+        window?.Close();
+    }
 
-        protected void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        private int GenerateNumber()
-        {
-            // Ваша реализация генерации номера счета
-            return new Random().Next(100000, 999999);
-        }
+    protected void OnPropertyChanged(string propertyName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }

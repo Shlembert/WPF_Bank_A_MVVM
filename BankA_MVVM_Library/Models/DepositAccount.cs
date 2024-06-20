@@ -1,11 +1,9 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 
-[JsonObject(MemberSerialization.OptIn)]
 public class DepositAccount : Account
 {
     public DepositAccount(int id, string accountNumber, string accountType, decimal balance, DateTime creationDate)
-        : base(id, accountNumber, accountType, balance, creationDate)
+       : base(id, accountNumber, accountType, balance, creationDate)
     {
     }
 

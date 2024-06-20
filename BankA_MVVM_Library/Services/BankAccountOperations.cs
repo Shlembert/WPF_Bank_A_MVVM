@@ -5,9 +5,12 @@ namespace BankA_MVVM_Library.Services
 {
     public class BankAccountOperations : IAccountOperations<BankAccount>
     {
-        public BankAccount CreateAccount(int id, string accountNumber, string accountType, decimal balance, DateTime createdDate)
+        private int _nextId = 1; // Пример логики для генерации уникального ID
+
+        public BankAccount CreateAccount(string accountNumber, string accountType, decimal balance, DateTime createdDate)
         {
-            return new BankAccount(id, accountNumber, accountType, balance, createdDate);
+            var newAccount = new BankAccount(_nextId++, accountNumber, accountType, balance, createdDate);
+            return newAccount;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.IO;
 
 public class ClientDataHandler : IClientDataHandler
 {
@@ -17,18 +17,18 @@ public class ClientDataHandler : IClientDataHandler
 
     public List<Client> LoadClients()
     {
-        if (!File.Exists(FilePath))
+        if (!System.IO.File.Exists(FilePath))
         {
             return new List<Client>();
         }
 
-        var json = File.ReadAllText(FilePath);
+        var json = System.IO.File.ReadAllText(FilePath);
         return JsonConvert.DeserializeObject<List<Client>>(json, GetJsonSerializerSettings());
     }
 
     public void SaveClients(List<Client> clients)
     {
         var json = JsonConvert.SerializeObject(clients, Formatting.Indented, GetJsonSerializerSettings());
-        File.WriteAllText(FilePath, json);
+        System.IO.File.WriteAllText(FilePath, json);
     }
 }

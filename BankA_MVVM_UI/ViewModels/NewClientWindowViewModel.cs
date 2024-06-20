@@ -1,5 +1,4 @@
 ﻿using BankA_MVVM_Library.Exceptions;
-using BankA_MVVM_Library.Models;
 using System;
 using System.Windows;
 using System.Windows.Input;
@@ -38,7 +37,7 @@ namespace BankA_MVVM.ViewModels
 
             try
             {
-                Client newClient = new Client(0, ClientName); // Создание клиента с id и именем
+                Client newClient = new Client(Guid.NewGuid(), ClientName); // Генерация нового Guid
                 ClientAdded?.Invoke(this, newClient);
             }
             catch (EmptyNameException ex)
@@ -46,5 +45,6 @@ namespace BankA_MVVM.ViewModels
                 MessageBox.Show(ex.Message);
             }
         }
+
     }
 }

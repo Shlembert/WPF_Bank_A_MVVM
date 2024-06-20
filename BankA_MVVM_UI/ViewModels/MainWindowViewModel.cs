@@ -1,11 +1,9 @@
-﻿using System;
+﻿using BankA_MVVM_UI.Views;
+using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows.Input;
-using BankA_MVVM_Library.Models;
-using BankA_MVVM_Library.Services;
-using BankA_MVVM_UI.Views;
-using System.Diagnostics; // Добавь это для использования Debug.WriteLine
 
 namespace BankA_MVVM.ViewModels
 {

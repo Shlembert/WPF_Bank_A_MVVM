@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Git\WPF_Bank_A_MVVM\BankA_MVVM_UI\obj\Debug\
+D:\GitHub\WPF_Bank_A_MVVM\BankA_MVVM_UI\obj\Debug\
 BankA_MVVM_UI
 none
 false
 DEBUG;TRACE
-D:\Git\WPF_Bank_A_MVVM\BankA_MVVM_UI\App.xaml
+D:\GitHub\WPF_Bank_A_MVVM\BankA_MVVM_UI\App.xaml
 61452803780
 
 16-1765764179
-20443845681
+20-1806032420
 Views\ClientDetailsWindow.xaml;Views\MainWindow.xaml;Views\NewAccountWindow.xaml;Views\NewClientWindow.xaml;Views\OperationLogWindow.xaml;Views\TransferWindow.xaml;
 
 False

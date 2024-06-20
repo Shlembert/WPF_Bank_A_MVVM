@@ -1,10 +1,29 @@
 [
   {
-    "Id": 0,
+    "Id": "084e5427-3ee3-4bc7-8e00-f57e8aef07a4",
     "Name": "Вася",
     "Accounts": [
       {
-        "$type": "BankAccount, BankA_MVVM_Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        "$type": "DepositAccount, BankA_MVVM_Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Id": 1,
+        "AccountNumber": "3080 4647 2501 5224 2884",
+        "AccountType": "Депозитный",
+        "Balance": 0.0,
+        "CreationDate": "2024-06-20T10:25:28.7927468+03:00"
+      }
+    ]
+  },
+  {
+    "Id": "0c4c93fd-cc32-48e5-b381-9c559222e63c",
+    "Name": "Петя",
+    "Accounts": [
+      {
+        "$type": "BankAccount, BankA_MVVM_Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Id": 1,
+        "AccountNumber": "2532 6811 3877 2899 3373",
+        "AccountType": "Не депозитный",
+        "Balance": 0.0,
+        "CreationDate": "2024-06-20T10:25:58.5808033+03:00"
       }
     ]
   }

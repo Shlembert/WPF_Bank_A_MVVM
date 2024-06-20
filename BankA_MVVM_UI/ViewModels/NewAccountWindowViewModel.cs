@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Input;
 using System.Windows;
 using System;
+using BankA_MVVM_Library.Services;
 
 public class NewAccountWindowViewModel : INotifyPropertyChanged
 {
@@ -86,9 +87,8 @@ public class NewAccountWindowViewModel : INotifyPropertyChanged
         string accountNumber = GeneratedAccountNumber;
         decimal initialBalance = 0;
         DateTime createdDate = DateTime.Now;
-        int id = 0; // или другая логика генерации id
 
-        return _accountOperations.CreateAccount(id, accountNumber, accountType, initialBalance, createdDate);
+        return _accountOperations.CreateAccount(accountNumber, accountType, initialBalance, createdDate);
     }
 
     private void SaveAccount(Account account)

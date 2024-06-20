@@ -1,6 +1,9 @@
 ﻿using System;
 
-public interface IAccountOperations<T> where T : Account
+namespace BankA_MVVM_Library.Services
 {
-    T CreateAccount(int id, string accountNumber, string accountType, decimal balance, DateTime createdDate);
+    public interface IAccountOperations<T> where T : Account
+    {
+        T CreateAccount(string accountNumber, string accountType, decimal balance, DateTime createdDate);
+    }
 }

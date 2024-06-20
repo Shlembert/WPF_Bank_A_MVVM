@@ -21,6 +21,7 @@ namespace BankA_MVVM.ViewModels
             {
                 _selectedClient = value;
                 OnPropertyChanged();
+                LoadClientDetails(); // Загрузить данные клиента перед открытием окна с деталями
                 OpenClientDetailsWindow();
             }
         }
@@ -50,6 +51,21 @@ namespace BankA_MVVM.ViewModels
         private void SaveClients()
         {
             _clientDataHandler.SaveClients(Clients.ToList());
+        }
+
+        private void LoadClientDetails()
+        {
+            if (_selectedClient != null)
+            {
+                // Перезагружаем всех клиентов из JSON
+                var clientsList = _clientDataHandler.LoadClients();
+                var client = clientsList.FirstOrDefault(c => c.Id == _selectedClient.Id);
+                if (client != null)
+                {
+                    _selectedClient.Accounts = client.Accounts;
+                    OnPropertyChanged(nameof(SelectedClient));
+                }
+            }
         }
 
         private void OpenNewClientWindow()

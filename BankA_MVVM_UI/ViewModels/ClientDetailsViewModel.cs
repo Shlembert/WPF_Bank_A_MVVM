@@ -1,5 +1,6 @@
 ﻿using BankA_MVVM_UI.Views;
 using System.Collections.ObjectModel;
+using System.Windows;
 using System.Windows.Input;
 
 namespace BankA_MVVM.ViewModels
@@ -42,6 +43,7 @@ namespace BankA_MVVM.ViewModels
         }
 
         public ICommand NewAccountCommand => new RelayCommand(AddNewAccount);
+        public ICommand DeleteAccountCommand => new RelayCommand(DeleteSelectedAccount);
 
         public void AddNewAccount()
         {
@@ -62,10 +64,25 @@ namespace BankA_MVVM.ViewModels
         {
             if (SelectedAccount != null)
             {
-                Accounts.Remove(SelectedAccount);
-                Client.Accounts.Remove(SelectedAccount);
-                SaveClientsToJson();
-                OnPropertyChanged(nameof(Accounts));
+                if (SelectedAccount.Balance > 0)
+                {
+                    MessageBox.Show("Невозможно удалить счет с ненулевым балансом.", "Ошибка удаления", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                MessageBoxResult result = MessageBox.Show("Вы уверены, что хотите удалить этот счет?", "Подтверждение удаления", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    Accounts.Remove(SelectedAccount);
+                    Client.Accounts.Remove(SelectedAccount);
+                    SaveClientsToJson();
+                    OnPropertyChanged(nameof(Accounts));
+                    MessageBox.Show("Счет успешно удален.", "Удаление завершено", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Пожалуйста, выберите счет для удаления.", "Ошибка удаления", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
@@ -117,8 +134,10 @@ namespace BankA_MVVM.ViewModels
             {
                 clients.Remove(existingClient);
             }
-            clients.Add(Client); // Добавляем обновленного клиента
-            _clientDataHandler.SaveClients(clients); // Сохраняем изменения
+
+            // Добавляем текущего клиента с обновленными данными
+            clients.Add(Client);
+            _clientDataHandler.SaveClients(clients);
         }
     }
 }

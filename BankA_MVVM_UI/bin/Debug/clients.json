@@ -1,5 +1,27 @@
 [
   {
+    "Id": "0c4c93fd-cc32-48e5-b381-9c559222e63c",
+    "Name": "Петя",
+    "Accounts": [
+      {
+        "$type": "NonDepositAccount, BankA_MVVM_Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Id": 1,
+        "AccountNumber": "2532 6811 3877 2899 3373",
+        "AccountType": "Не депозитный",
+        "Balance": 0.0,
+        "CreationDate": "2024-06-20T10:25:58.5808033+03:00"
+      },
+      {
+        "$type": "DepositAccount, BankA_MVVM_Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Id": 1,
+        "AccountNumber": "7445 1703 9277 8877 3228",
+        "AccountType": "Депозитный",
+        "Balance": 0.0,
+        "CreationDate": "2024-06-20T13:45:46.6919892+03:00"
+      }
+    ]
+  },
+  {
     "Id": "084e5427-3ee3-4bc7-8e00-f57e8aef07a4",
     "Name": "Вася",
     "Accounts": [
@@ -10,20 +32,44 @@
         "AccountType": "Депозитный",
         "Balance": 0.0,
         "CreationDate": "2024-06-20T10:25:28.7927468+03:00"
+      },
+      {
+        "$type": "DepositAccount, BankA_MVVM_Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Id": 1,
+        "AccountNumber": "7453 2680 3328 6432 9399",
+        "AccountType": "Депозитный",
+        "Balance": 0.0,
+        "CreationDate": "2024-06-20T13:44:39.6377279+03:00"
+      },
+      {
+        "$type": "DepositAccount, BankA_MVVM_Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Id": 1,
+        "AccountNumber": "8469 4907 0369 4253 3514",
+        "AccountType": "Депозитный",
+        "Balance": 0.0,
+        "CreationDate": "2024-06-20T14:01:57.8013266+03:00"
       }
     ]
   },
   {
-    "Id": "0c4c93fd-cc32-48e5-b381-9c559222e63c",
-    "Name": "Петя",
+    "Id": "4478d401-617f-463c-923e-9de48dfed2fe",
+    "Name": "Коля",
     "Accounts": [
       {
-        "$type": "BankAccount, BankA_MVVM_Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "$type": "DepositAccount, BankA_MVVM_Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Id": 1,
-        "AccountNumber": "2532 6811 3877 2899 3373",
+        "AccountNumber": "9466 0872 5760 6233 2254",
+        "AccountType": "Депозитный",
+        "Balance": 0.0,
+        "CreationDate": "2024-06-20T13:46:59.6016858+03:00"
+      },
+      {
+        "$type": "NonDepositAccount, BankA_MVVM_Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Id": 1,
+        "AccountNumber": "3940 3139 4798 4927 1678",
         "AccountType": "Не депозитный",
         "Balance": 0.0,
-        "CreationDate": "2024-06-20T10:25:58.5808033+03:00"
+        "CreationDate": "2024-06-20T14:01:27.1687988+03:00"
       }
     ]
   }

@@ -26,22 +26,34 @@ namespace BankA_MVVM_UI.Views
 
         private void DeleteAccountButton_Click(object sender, RoutedEventArgs e)
         {
-            _viewModel.DeleteSelectedAccount();
+            if (DataContext is ClientDetailsViewModel viewModel)
+            {
+                viewModel.DeleteSelectedAccount();
+            }
         }
 
         private void TransferButton_Click(object sender, RoutedEventArgs e)
         {
-            _viewModel.TransferBetweenAccounts();
+            if (DataContext is ClientDetailsViewModel viewModel)
+            {
+                viewModel.TransferBetweenAccounts();
+            }
         }
 
         private void DepositButton_Click(object sender, RoutedEventArgs e)
         {
-            _viewModel.DepositToSelectedAccount();
+            if (DataContext is ClientDetailsViewModel viewModel)
+            {
+                viewModel.DepositToSelectedAccount();
+            }
         }
 
         private void WithdrawButton_Click(object sender, RoutedEventArgs e)
         {
-            _viewModel.WithdrawFromSelectedAccount();
+            if (DataContext is ClientDetailsViewModel viewModel)
+            {
+                viewModel.WithdrawFromSelectedAccount();
+            }
         }
     }
 }
